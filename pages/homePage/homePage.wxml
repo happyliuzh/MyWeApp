@@ -1,10 +1,40 @@
-<!--index.wxml-->
+
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+  <loading hidden="{{hidden}}">
+        加载中...
+  </loading>
+
+  <view class="header">
+      <view class="title">术康营养餐</view>
+      <view class="desc">营养可口的午餐.</view>
+      <view class="desc">每日21：00前订餐。</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="menu-list">
+    <block wx:for-items="{{menuList}}" wx:for-item="menuItem">
+      <view class="menu-item">
+        <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+          <text class="menu-item-name">{{menuItem.name}}</text>
+          <image
+            class="menu-item-arrow {{menuItem.opened ? 'open' : 'close'}} {{menuItem.url ? 'url' : ''}}"
+            src="/image/arrowright.png">
+          </image>
+        </view>
+        <view class="menu-item-api-list {{menuItem.opened ? 'open' : 'close'}}">
+          <block wx:for-items="{{menuItem.APIList}}" wx:for-item="APIItem">
+            <!--<navigator url="{{APIItem.url}}">-->
+              <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
+                <image class="menu-item-api-item-leftImage" src="/image/IMG_0029.jpg"></image>
+                <view class="menu-item-api-item-text">
+                  <text class="menu-item-api-item-text-zhname">{{APIItem.zhName}}</text>
+                </view>
+                <image class="menu-item-api-item-arrow" src="/image/arrowright.png"></image>
+              </view>
+            <!--</navigator>-->
+          </block>
+        </view>
+      </view>
+    </block>
   </view>
-</view>
+  </view>

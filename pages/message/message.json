@@ -1,7 +1,9 @@
 {
-    "navigationBarBackgroundColor":"#ffffff",
-    "navigationBarTextStyle":"black",
-    "navigationBarTitleText":"消息",
+    "navigationBarBackgroundColor":"#E50263",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText":"运动康复",
     "backgroundColor":"#eeeeee",
-    "backgroundTextStyle":"light"
+    "backgroundTextStyle":"light",
+    "enablePullDownRefresh": true
+
 }

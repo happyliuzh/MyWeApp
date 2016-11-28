@@ -1,0 +1,38 @@
+
+<view class="container">
+
+<loading hidden="{{hidden}}">
+        加载中...
+  </loading>
+  
+  <view class="header">
+      <image class="header_image" src="/image/IMG_0030.jpg"></image>
+  </view>
+
+  <view class="menu-list">
+    <block wx:for-items="{{menuList}}" wx:for-item="menuItem">
+      <view class="menu-item">
+        <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+          <text class="menu-item-name">{{menuItem.name}}</text>
+          <image
+            class="menu-item-arrow {{menuItem.opened ? 'open' : 'close'}} {{menuItem.url ? 'url' : ''}}"
+            src="/image/arrowright.png">
+          </image>
+        </view>
+        <view class="menu-item-api-list {{menuItem.opened ? 'open' : 'close'}}">
+          <block wx:for-items="{{menuItem.APIList}}" wx:for-item="APIItem">
+            <!--<navigator url="{{APIItem.url}}">-->
+              <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
+                <image class="menu-item-api-item-leftImage" src="/icons/tab_btn_healthy_s.png"></image>
+                <view class="menu-item-api-item-text">
+                  <text class="menu-item-api-item-text-zhname">{{APIItem.zhName}}</text>
+                </view>
+                <image class="menu-item-api-item-arrow" src="/image/arrowright.png"></image>
+              </view>
+            <!--</navigator>-->
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+  </view>

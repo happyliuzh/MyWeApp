@@ -2,8 +2,6 @@
   "pages":[
     "pages/homePage/homePage",
     "pages/message/message" ,
-    "pages/knowledge/knowledge",
-    "pages/coupon/coupon",
     "pages/me/me"
   ],
   "window":{
@@ -17,25 +15,16 @@
     "selectedColor":"#e50263",
     "list": [{
       "pagePath": "pages/homePage/homePage",
-      "text": "健康",
+      "text": "营养餐",
       "iconPath":"icons/tab_btn_healthy_f.png",
       "selectedIconPath":"icons/tab_btn_healthy_s.png"
     }, {
       "pagePath": "pages/message/message",
-      "text": "消息",
+      "text": "运动康复",
       "iconPath":"icons/tab_btn_information_f.png",
       "selectedIconPath":"icons/tab_btn_information_s.png"
-    }, {
-      "pagePath": "pages/knowledge/knowledge",
-      "text": "知识",
-      "iconPath":"icons/tab_btn_news_f.png",
-      "selectedIconPath":"icons/tab_btn_news_s.png"
-    }, {
-      "pagePath": "pages/coupon/coupon",
-      "text": "福利",
-      "iconPath":"icons/tab_btn_coupon_f.png",
-      "selectedIconPath":"icons/tab_btn_coupon_s.png"
-    }, {
+    },
+     {
       "pagePath": "pages/me/me",
       "text": "我",
       "iconPath":"icons/tab_btn_more_f.png",
