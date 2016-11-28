@@ -25,7 +25,7 @@
           <block wx:for-items="{{menuItem.APIList}}" wx:for-item="APIItem">
             <!--<navigator url="{{APIItem.url}}">-->
               <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
-                <image class="menu-item-api-item-leftImage" src="/image/IMG_0029.jpg"></image>
+                <image class="menu-item-api-item-leftImage" src="/image/IMG_0029.png"></image>
                 <view class="menu-item-api-item-text">
                   <text class="menu-item-api-item-text-zhname">{{APIItem.zhName}}</text>
                 </view>

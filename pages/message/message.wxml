@@ -6,7 +6,7 @@
   </loading>
   
   <view class="header">
-      <image class="header_image" src="/image/IMG_0030.jpg"></image>
+      <image class="header_image" src="/image/IMG_0030png.png"></image>
   </view>
 
   <view class="menu-list">
