@@ -29,7 +29,7 @@
         <image class="menu-item-api-item-arrow" src="/image/arrowright.png"></image>
     </view>
 
-    <view class="me_center_item_list">
+    <view class="me_center_item_list" bindtap="onAboutUsTapped">
         <view class="item_left_title">关于我们</view>
         <image class="menu-item-api-item-arrow" src="/image/arrowright.png"></image>
     </view>

@@ -1,0 +1,47 @@
+
+.logoview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoimage {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-top: 100rpx;
+}
+.aboutus_item_list
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    align-items: center;
+}
+.aboutus_item_list_title
+{
+    font-size: 40rpx;
+    color: #E50263;
+}
+
+.aboutus_item_list_content
+{
+    margin-top: 30rpx;
+    font-size: 30rpx;
+    color: #999999;
+}
+
+.test_input
+{
+    width: 750rpx;
+    height: 50rpx;
+}
+
+.input_section
+{
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    width: 750rpx;
+    height: 60rpx;
+    
+}

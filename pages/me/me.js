@@ -27,5 +27,11 @@ Page({
         userInfo:userInfo
       })
     })
+  },
+  onAboutUsTapped:function(){
+    console.log("12345");
+    wx.navigateTo({
+      url: '../aboutus/aboutus'
+    })
   }
 });

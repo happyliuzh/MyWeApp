@@ -24,7 +24,7 @@
 .item_left_title
 {
     color: #e56347;
-    font-size: 15px;
+    font-size: 40rpx;
 }
 
 .menu-item-api-item-arrow {
@@ -58,11 +58,12 @@
 
 .userinfo-nickname {
   color: #aaa;
+  font-size: 50rpx;
 }
 
 .userinfo-location
 {
-  font-size: 25rpx;
+  font-size: 30rpx;
   margin-top: 30rpx;
   color: #bbb;
   margin-bottom: 30rpx;
